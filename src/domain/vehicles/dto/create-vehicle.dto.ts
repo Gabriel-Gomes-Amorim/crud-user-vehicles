@@ -1,17 +1,44 @@
+import { ApiProperty } from '@nestjs/swagger';
+import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
+
 export class CreateVehicleDto {
-  brand: String;
+  @ApiProperty({ description: 'Marca do veículo' })
+  @IsNotEmpty()
+  @IsString()
+  brand: string;
 
-  model: String;
+  @ApiProperty({ description: 'Modelo do veículo' })
+  @IsNotEmpty()
+  @IsString()
+  model: string;
 
-  year: Number;
+  @ApiProperty({ description: 'Ano do veículo' })
+  @IsNotEmpty()
+  @IsNumber()
+  year: number;
 
-  fuel: String;
+  @ApiProperty({ description: 'Tipo de combustível do veículo' })
+  @IsNotEmpty()
+  @IsString()
+  fuel: string;
 
-  mileage: Number;
+  @ApiProperty({ description: 'Quilometragem do veículo' })
+  @IsNotEmpty()
+  @IsNumber()
+  mileage: number;
 
-  color: String;
+  @ApiProperty({ description: 'Cor do veículo' })
+  @IsNotEmpty()
+  @IsString()
+  color: string;
 
-  plate: String;
+  @ApiProperty({ description: 'Placa do veículo' })
+  @IsNotEmpty()
+  @IsString()
+  plate: string;
 
+  @ApiProperty({ description: 'ID do proprietário do veículo' })
+  @IsNotEmpty()
+  @IsNumber()
   ownerId: number;
 }

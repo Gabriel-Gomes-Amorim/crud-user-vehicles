@@ -14,8 +14,11 @@ import { VehiclesService } from '../../../domain/vehicles/service/vehicles.servi
 import { CreateVehicleDto } from 'src/domain/vehicles/dto/create-vehicle.dto';
 import { UpdateVehicleDto } from 'src/domain/vehicles/dto/update-vehicle.dto';
 import { Request, Response } from 'express';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('vehicles')
+// swagger
+@ApiTags('vehicles')
 export class VehiclesController {
   constructor(private readonly vehiclesService: VehiclesService) {}
 
