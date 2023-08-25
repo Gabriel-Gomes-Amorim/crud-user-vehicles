@@ -1,10 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { CreateUserDto } from '../dto/create-user.dto';
 import { UpdateUserDto } from '../dto/update-user.dto';
-import UserRepository from 'src/infra/user/repository/vehicles.repository';
+
 import { EmailException } from '../utils/error/email-exists';
 import * as bcrypt from 'bcrypt';
 import { IdNotFoundException } from '../utils/error/idnotfound';
+import UserRepository from 'src/infra/user/repository/user.repository';
 
 @Injectable()
 export class UserService {

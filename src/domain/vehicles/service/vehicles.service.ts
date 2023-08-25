@@ -2,8 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { CreateVehicleDto } from '../dto/create-vehicle.dto';
 import { UpdateVehicleDto } from '../dto/update-vehicle.dto';
 import VehiclesRepository from 'src/infra/vehicles/repository/typeorm/vehicles.repository';
-import UserRepository from 'src/infra/user/repository/vehicles.repository';
 import { IdNotFoundException } from 'src/domain/user/utils/error/idnotfound';
+import UserRepository from 'src/infra/user/repository/user.repository';
 
 @Injectable()
 export class VehiclesService {
