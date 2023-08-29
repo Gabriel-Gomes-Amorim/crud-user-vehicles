@@ -15,6 +15,7 @@ import { CreateVehicleDto } from 'src/domain/vehicles/dto/create-vehicle.dto';
 import { UpdateVehicleDto } from 'src/domain/vehicles/dto/update-vehicle.dto';
 import { Request, Response } from 'express';
 import { ApiTags } from '@nestjs/swagger';
+import { IsPublic } from 'src/auth/decorators/is-public.decorator';
 
 @Controller('vehicles')
 // swagger

@@ -36,8 +36,13 @@ export class UserService {
     };
   }
 
-  findById(id: number) {
-    return this.userRepository.findById(id);
+  async findById(id: number) {
+    const user = await this.userRepository.findById(id);
+    if (user) {
+      user.password = undefined;
+      return user;
+    }
+    return null;
   }
 
   async update(id: number, updateUserDto: UpdateUserDto) {
@@ -65,5 +70,9 @@ export class UserService {
 
   remove(id: number) {
     return this.userRepository.remove(id);
+  }
+
+  findByEmail(email: string) {
+    return this.userRepository.findByEmail(email);
   }
 }

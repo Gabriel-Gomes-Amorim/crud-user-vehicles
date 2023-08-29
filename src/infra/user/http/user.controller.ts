@@ -15,6 +15,7 @@ import { CreateUserDto } from 'src/domain/user/dto/create-user.dto';
 import { UpdateUserDto } from 'src/domain/user/dto/update-user.dto';
 import { Request, Response } from 'express';
 import { ApiTags } from '@nestjs/swagger';
+import { IsPublic } from 'src/auth/decorators/is-public.decorator';
 
 @Controller('user')
 // swagger
@@ -22,6 +23,7 @@ import { ApiTags } from '@nestjs/swagger';
 export class UserController {
   constructor(private readonly userService: UserService) {}
 
+  @IsPublic()
   @Post('create')
   async create(
     @Body() createUserDto: CreateUserDto,

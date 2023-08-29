@@ -37,6 +37,9 @@ export class VehiclesService {
 
     const createdVehicle = await this.vehiclesRepository.save(newVehicle);
 
+    // Remover a senha do usuário antes de retornar
+    isUserAlreadyExists.password = undefined;
+
     return { ...createVehicle };
   }
 
