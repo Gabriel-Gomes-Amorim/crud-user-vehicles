@@ -7,6 +7,8 @@
 - TypeOrm
 - Swagger
 - MySql
+- Jwt
+
 
 ## Começando
 
