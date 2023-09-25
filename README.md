@@ -1,34 +1,53 @@
-## Api Nestjs - crud-user-vehicles
+# Sistema de crud-user-vehicles
 
-## Tecnologias
+Sistema que realiza as operaçẽs de um crud (Create, Read, Update, Delete) para veículos.
 
-- NestJS
+## Recursos Principais
+
+1. **Cadastro de veículos** 
+
+2. **Leitura dos dados dos veículos cadastrados** 
+
+3. **Atualização dos dados dos veículos** 
+
+4. **deletação dos veículos cadastrados**
+   
+## Tecnologias Utilizadas
+
+- **NestJS**
+- **TypeOrm**
+- **Docker**
+- **MySql**
+  
+## Como Rodar o Projeto
+
+Para rodar este projeto em seu ambiente local, siga estas etapas:
+
+### Pré-requisitos
+
+Certifique-se de ter as seguintes ferramentas instaladas em seu sistema:
+
+- Node.js
 - Docker
-- TypeOrm
-- Swagger
-- MySql
-- Jwt
+- Docker Compose
+
+Além disso, você precisará configurar um banco de dados PostgreSQL. Você pode fazer isso manualmente ou usar o Docker Compose para criar um contêiner PostgreSQL. Certifique-se de atualizar as informações de configuração do banco de dados no arquivo `.env`.
+
+### Passos de Instalação
+
+1. Clone este repositório em seu computador:
+
+   ```bash
+   git clone https://github.com/seu-usuario/seu-projeto.git
 
 
-## Começando
+2. Instale as depedências
+   
+    ```bash
+    npm install
 
-1 - Configurar .env
+3. execute os contâiners
 
-2 - instalar depedencias
+   ```bash
+   docker-compose up -d
 
-```bash
-npm install
-```
-
-3 - subir os containers
-
-```bash
-docker-compose up -d
-```
-
-4 - Doc API - localhost:3000/api
-
-## Contato
-
-- Email: gomez.amorim18@hotmail.com
-- Linkedin: https://www.linkedin.com/in/gabriel-gomes99/
