@@ -6,11 +6,11 @@ Sistema que realiza as operaçẽs de um crud (Create, Read, Update, Delete) par
 
 1. **Cadastro de veículos** 
 
-2. **Leitura dos dados dos veículos cadastrados** 
+2. **Leitura de dados dos veículos** 
 
-3. **Atualização dos dados dos veículos** 
+3. **Atualização de veículos** 
 
-4. **deletação dos veículos cadastrados**
+4. **deletação de veículos cadastrados**
    
 ## Tecnologias Utilizadas
 
@@ -18,6 +18,8 @@ Sistema que realiza as operaçẽs de um crud (Create, Read, Update, Delete) par
 - **TypeOrm**
 - **Docker**
 - **MySql**
+- **JWT**
+
   
 ## Como Rodar o Projeto
 
