@@ -10,7 +10,7 @@ Sistema que realiza as operaçẽs de um crud (Create, Read, Update, Delete) par
 
 3. **Atualização de veículos** 
 
-4. **deletação de veículos cadastrados**
+4. **deletação de veículos**
    
 ## Tecnologias Utilizadas
 
